@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>external css</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/sample.css' %}">
+	<script type="text/javascript" src="{% static 'js/sample.js' %}"></script>
+</head>
+<body>
+	<h3>Signup page</h3>
+	<form>
+		<input type="text" name="uname" placeholder="Enter your name" required=""><br><br>
+		<input type="text" name="email" placeholder="Enter your email" required=""><br><br>
+		<input type="password" name="psw" placeholder="Enter your password" required=""><br><br>
+		<input type="password" name="cpsw" placeholder="Enter your cofirm password" required=""><br><br>
+		<button>Signup</button>
+	</form>
+	<img src="{% static 'images/apssdc.jpg' %}">
+</body>
+</html>

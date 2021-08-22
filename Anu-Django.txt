@@ -1,0 +1,396 @@
+		GoodAfternon TO All:
+		--------------------
+			- Please rename it yourself given below format
+			
+			      Rollnumber-Your name- College name
+			- 3 hours session
+			-  up to dictionary 
+				  
+			- S/w Requirements For Django:
+			------------------------------
+					- python
+					   - 3.9,3.8,3.7
+					- sublime text editor
+							- https://www.sublimetext.com/3
+					- django package
+							- pip install django
+							
+							
+			Django introduction:
+			--------------------
+				- it is a web framework
+				web framework:
+				--------------
+					- it is used to design to support the develop of web applications
+						- web services
+						- web resources
+						- web API
+				- python web frameworks:
+				--------------------------
+						- django
+						- flask
+						- web2py
+						- bottle
+						- cherrypy
+						- jam .py
+				- every web frame should follow some architechture
+						- MVC(model view controller)
+						
+							- model:it stores data base connectivity
+							- views:we can write logic for user representation
+							- controller- it controlls both model and views
+							
+						- MVT(model view templates)- django
+								model-store db connections
+								views- views is the controller(templats,models)
+								templates- it stores .html files
+								
+						features:
+						--------
+							- very fast
+								-  we develop application in fast manner 
+							- secure
+								- user authentication system 
+								- use our accounts,passowrds
+							- scalable
+								- it is quickly and flexibiliy switch from small to large applications
+							- open source
+								- to build applications for different domains
+							- fully loaded
+								- it contains modules and libraries which can be used to handle web app
+								
+						project creation in django:
+						---------------------------
+								- you have choose one location
+								- in that location you have create one folder
+								- you have to open cmd in folder location
+								- for project creation django provide one command
+									 'django-admin startproject projectname'
+								
+								
+								- __init__:this is also considerable as a python file
+								-  asgi.py:asynchronous server gateway interface
+								-  settings.py:we will make all project settings.
+								-  urls.py:we will map our urls
+							    -  wsgi.py:web service gateway interface
+								-  manage.py:execution starts from here(server)
+								
+						App creation:
+						--------------
+								- manage.py
+								- in django for app creation it provides one command i.e
+								
+										'python manage.py startapp yourname'
+										
+								- migrations:it will handle all db connections
+								- init:this is also considerable as a python file
+								- admin:we will give permissions to admin to acess our db
+								- apps.py:we will see our app information
+								- models.py:we will store our data base
+								- test.py:used for testing purpose
+								- views.py:it is controller(templates,models)
+								
+						- you have to register you app in settings.py-->installed apps
+						
+						
+						runserver:
+						---------
+								- python manage.py runserver
+								- ip adress port no-8000
+								- python manage.py runserver 9090
+								
+								
+						URL mapping:
+
+						-----------
+						    - static 
+							- user->url.py->views.py->templates
+							                        -> models
+							user->urls.py->views:
+							---------------------
+								120.0.0.1:8000
+								localhost:8000/urlname-urls.py->views
+								
+							url creation:
+							-------------
+								path('p1','p2','p3'),
+								path('urlname','function name(views)',name of the url)
+								
+								ex:path('sample/',views.functionname,name='sample'),
+								
+							ex:localhost:8000/sample
+							o/p: hai welcome to django workshop
+							     heading tags-h1 to h6
+								 
+						dynamic url mapping:
+						-------------------
+								localhost:8000/urlname-static
+								localhost:8000/urlname/<data type:variable name>/-dynamic
+								
+								methods->.format
+								
+								name="srikanya"
+								print('my name is:{}'.format(name))
+								my name is srikanya
+								
+						task:
+						-----
+						
+								localhost:8000/urlname/srikanya/659
+								o/p: my name is: srikanya and my roll number is 659
+						html tags:
+						css->types of css
+						bootstrap
+						
+				Day objectives:
+				---------------
+					- django templates
+						templates:it contains .html files
+						user->urls.py->views->templates
+						
+						render(p1,p2,p3)
+						
+						render(request,'html file location',{})
+						
+				how to create templates:
+				------------------------
+					- you have to open your app
+							->right click->newfolder->templates
+							->templates->open->newfolder->MyApp
+					->doctype
+					->head
+					-body
+					-html
+					- html tags:
+					-----------
+						- input
+						- heading
+						- p
+						- link
+						- script
+						- table
+						- img
+						- button
+						- div
+						- <a>
+					table- rows and columns
+					
+					       s.no name rollnumber age gender
+						   1    siri   130659   21   f
+						   2    giri    130657  20   m
+					css:
+						- cascading style sheets
+						- for providing styling html pages
+					types of css:
+					-------------
+						- inline css   - if you apply styles in same line or single line
+						- internal css - head tag
+						- external css - one separate .css file
+							link
+						
+					- static file handling
+							
+							static files->.css,.js,images
+							js-alert message
+					 static folder creation:
+					 ----------------------
+						-our->newfolder->static->3
+						
+										->css
+										->js
+										->images
+										
+					DTL:(django template language)
+					-------------------------------
+						syntax:
+						------
+								{% statements %}
+								
+									{{}}
+								
+								{% end statements%}
+								
+								ctrl+c
+					- bootstrap
+						-it is entirally different from css
+						- it is effiecient -classes-styling
+						    - online 
+								- online ->css links
+										-> js links
+								- after title tag
+							- offline
+								-static-css->links copy
+								-statiic->js->min.js copy
+					task:
+					------
+						- registration page->offline
+							- username
+							- email
+							- mobile number
+							- psw
+							- cpsw
+							- date
+							- file
+							- radio buttons
+							- chck boxes
+							- file 
+							
+					 GoodAfternon TO All:
+					 ---------------------
+						 The session will be starts at 2:05 PM
+							 
+							
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					Day Objectives:
+					--------------
+						- Django Admin
+							- superuser account
+							- python manage.py createsuperuser
+							- operational error:
+									- python manage.py migrate
+								
+								username: admin
+								email:admin@gmail.com
+								psw:
+								cpsw:
+								
+						- Model creation
+							 
+							 model:
+								- here we can create our db
+								- by classes
+								- class name->db name
+								- db-fields->data type(int,char,varchar....)->length..
+								
+							- after creation of model you have to do two steps:
+								- python manage.py makemigrations(it will generate one interface file)->migrations
+								- python manage.py migrate(interface file->table)
+								
+								
+								
+								
+						- CRUD operations:create read or retrieve update delete
+							- 3 ways:
+							  ------ 
+								- ORM quries(object relational mapping)
+									- by using object we can perform crud operations.
+									- python manage.py shell
+									
+									- from MyApp.models import Student
+							insert data base:
+							----------------
+								- 1. save()
+										obj=modelname(name=value,name2=values....)
+										obj=Student(name='siri',rollnum='130659',age='21',mobile='78998988'...)
+										obj.save()
+										
+								- 2. obj=modelname.objects.create(name=value,name2=value2.......)
+									 obj
+									 ex:
+									  obj=Student.objects.create(name='giri',rollnum='3456',age='20'.......)
+									  obj
+									  
+							retrieving data base:
+							======================
+									- if you want to retrieve entire db
+										- ob=classname.objects.all()
+										- ob= Student.objects.all()
+										- ob 
+									- if you want to access individual columns
+										for i in ob:
+											print(i.name)
+											print(i.age)
+									- if you return list format
+											ob= modelname.objects.values_list()
+											ob
+									- if you want to access unique data(specific data)
+											-get()
+											- data=classname.objects.get(id=3)
+											 data
+									- if you want to acess multiple data(duplicates)
+											- filter()
+											- data=class.objects.filter(name='siri')
+											- data
+									- if you want to access first
+										 class name.objects.first()
+								    - if you want to access last
+										class name.objects.last()
+										
+									slicing:
+									-------
+										info= classname.objects.all()[:3]
+										info
+								Data Upadation:
+								---------------
+								
+										 - to update a specific field in all records
+											 address=srikakulam
+											 info=Student.objects.all().update(address='srikakulam')
+											 info
+										- to update specific record
+												 - we have to fetch data from db
+														info=Student.objects.get(id=2)
+														info
+														info.address='guntur'
+														info.save()
+														info
+														
+								Data deletion:
+								-------------
+								- delete all records
+									- modelname.objects.all().delete()
+								- specific data deletion
+									 - get()
+										- info=modelname.objects.get(id=3)
+										  info.delete()
+								
+										
+								Html pages:
+								-----------
+										- html -crud
+										- >user->url->views->templates
+										request methods:
+										---------------
+											- get()
+											- post()
+												- csrf_token-data secure
+										->templates->method,csrf_token->views->method="post"
+										
+								- retrieving,up ,delete
+								- forms
+					
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								- Html pages
+								- forms
+						
+						

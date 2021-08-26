@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+	<h1 class="display-4">Profile Form</h1>
+	<form method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		<table>
+			{{f.as_table}}
+		</table>
+		<button class="btn btn-outline-success">Submit</button>
+	</form>
+</div>
+
+{% endblock %}

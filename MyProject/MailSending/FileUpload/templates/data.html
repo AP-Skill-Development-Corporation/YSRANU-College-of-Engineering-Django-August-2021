@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<table class="table w-50">
+		<tr>
+			<th>Name</th>
+			<th>Image</th>
+		</tr>
+		{% for row in data %}
+		<tr>
+			<td>{{row.name}}</td>
+			<td><img src="{{row.image.url}}"></td>
+		</tr>
+		
+		{% endfor %}
+
+	</table>
+	
+{% endblock %}

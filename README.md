@@ -11,5 +11,4 @@ This repo contains files of concepts discussed in the workshop
 
 [Day 5](https://transcripts.gotomeeting.com/#/s/7f208db65af545d5196ad1ddce10a9b6ca25b28e3806b09308945ac15e7e472d)
 
-
-
+[Day 6](https://transcripts.gotomeeting.com/#/s/c88818cdb7a3aae05c93b51af90c6054e1d82311423b9510e4805c5085c1100d)

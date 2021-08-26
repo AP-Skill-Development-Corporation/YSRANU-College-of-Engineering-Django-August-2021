@@ -10,7 +10,11 @@ This repo contains files of concepts discussed in the workshop
 [Day 4](https://transcripts.gotomeeting.com/#/s/e550b3eda0a325883eeb1dfb9dff57c93caa75cd6decf0b026450cf062c50b0d)
 
 [Day 5](https://transcripts.gotomeeting.com/#/s/7f208db65af545d5196ad1ddce10a9b6ca25b28e3806b09308945ac15e7e472d)
+- CRUD Operations using ModelForm
 
 [Day 6](https://transcripts.gotomeeting.com/#/s/c88818cdb7a3aae05c93b51af90c6054e1d82311423b9510e4805c5085c1100d)
+- Mail Sending
+- Template Blocks
 
 [Day 7](https://transcripts.gotomeeting.com/#/s/13f0ef6058b0e0815e5fbf45e8a2b6c6ab539ecf24a8d59e43c7773b50ff4618)
+- File Upload

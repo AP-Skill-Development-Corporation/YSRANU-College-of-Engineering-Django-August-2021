@@ -1,0 +1,125 @@
+1.Requirements:
+-------------
+python
+django : pip install django
+
+2.Create Project:
+--------------
+django-admin startproject <project name>
+
+3.Create App:
+------------
+django-admin startapp <app name> or
+python manage.py startapp <app name>
+
+4. Add app to Installed apps list in settings.py module
+
+
+
+Admin app:
+-----------
+-> Create login credentials to this admin app
+	->python manage.py createsuperuser
+
+Defining urls:
+--------------
+path('pattern/',view_function,name="")
+
+View function:
+--------------
+def view_function_name(request):
+
+	if request.method=="POST":
+		....
+		....
+		return 
+	...
+	...
+	return HttpResponse("Response") or
+	return render(request,"template.html",{"data":data})
+
+
+Templates:
+----------
+
+Models: To define the structure of the table
+------
+
+-> In the form of classes
+-> Each class represents a table in the database
+-> Each field in the model class represents a column in the db table
+-> Model class is to define the structure and type of the column fields
+
+CRUD:
+-----
+ORM Queries: Object Relational Mapping
+============
+
+
+Create/insert : 
+-------------
+=> create(), save()
+model_name.objects.create(field=value,field2 = value2)
+
+obj = model_name(field=value,field2 = value2)
+obj.save()
+
+
+Retrive:
+-------
+=> all()-> get all the data in the table
+
+get(query)-> get a single record present in the table 
+
+filter(query)-> to get multiple records
+
+
+Update:
+-------
+=> update(), save()
+model_name.objects.get(query).update(query)
+
+obj = model_name(field=value,field2 = value2)
+obj.field = new_value
+obj.save()
+
+Delete:
+-------
+delete() : model_name.objects.filter(query).delete()
+
+
+Forms:
+------
+ModelForm: we have to pass model and fields
+Form : we can create fields
+-> form validations: is_valid()
+-> Store the data : save()
+
+File Handling:
+-------------
+
+Image:
+=====
+pillow: A python package used to handle with images
+
+-> pip install pillow
+
+settings:
+--------
+
+MEDIA_ROOT : To define the path to store the files
+	MEDIA_ROOT = os.path.join(BASE_DIR,"images")
+
+MEDIA_URL : To retrive the files
+	MEDIA_URL = '/media/'
+
+
+URLS:
+-----
+from django.conf import settings
+from django.conf.urls.static import static
+
+if settings.DEBUG:
+    urlpatterns+=static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
+

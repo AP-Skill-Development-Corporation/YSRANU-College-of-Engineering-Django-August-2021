@@ -1,0 +1,58 @@
+Day Objectives:
+---------------
+1. Database connectivity with MYSQL
+2. User Authentication
+
+
+DATABASE:
+--------
+Relational Database : MYSQL, Postgresql, sqlite...
+
+Non-Relational Databse : Mongodb
+
+
+Django Supports Relational Databases only.
+
+Database connectivity with MYSQL:
+----------------------------------
+1. Install Xampp server
+2. open admin page (in browser : localhost/phymyadmin)
+3. Create a database (Name:  ANU)
+
+=> Install mysqlclient  : pip install mysqlclient
+
+settings:
+--------
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ANU',
+        'PORT' : '3306'
+    }
+}
+
+
+User Authentication:
+===================
+registration
+login
+logout
+
+
+registration:
+------------
+model (User)
+registration form ( UserCreationForm )
+url
+view function
+template
+
+Login:
+------
+from django.contrib.auth import authenticate, login
+login(request, user_object)
+
+Logout:
+-----
+from django.contrib.auth import logout
+logout(request)

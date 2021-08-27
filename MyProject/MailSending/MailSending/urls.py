@@ -27,7 +27,9 @@ urlpatterns = [
     path('',views.home,name="home"),
     path('contactUs/',views.contactUs,name="contact"),
 
-    path("file/",include("FileUpload.urls"))
+    path("file/",include("FileUpload.urls")),
+
+    path('users/',include("authentication.urls")),
 ]
 
 if settings.DEBUG:

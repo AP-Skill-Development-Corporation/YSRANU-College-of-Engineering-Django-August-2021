@@ -18,3 +18,10 @@ This repo contains files of concepts discussed in the workshop
 
 [Day 7](https://transcripts.gotomeeting.com/#/s/13f0ef6058b0e0815e5fbf45e8a2b6c6ab539ecf24a8d59e43c7773b50ff4618)
 - File Upload
+
+[Day 8](https://transcripts.gotomeeting.com/#/s/b71ec8a72889731f1da8994e7d1d1a8034897d4f6fb56e8a54c7d20b0c1b1544)
+- Connecting MYSQL with Django
+- Authentication
+  - Registration
+  - Login
+  - Logout
